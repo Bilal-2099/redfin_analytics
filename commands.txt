@@ -1,0 +1,19 @@
+sudo apt update
+sudo apt install python3-pip
+sudo apt install python3.12-venv
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip -y
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
+python3 -m venv redfin_venv
+source redfin_venv/bin/activate
+pip install pandas
+pip install boto3
+pip install apache-airflow
+airflow version
+python3 --version
+
+aws s3 ls s3://bucket_name
+airflow standalone
+
